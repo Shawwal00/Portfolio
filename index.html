@@ -1,19 +1,28 @@
 <!DOCTYPE html>
     <title>My GitHub Pages Site, contains my Portfolio</title>
     <style>
-        .top-container
-        {
-            background-color: #f1f1f1;
-            padding: 30px;
-            text-align: center;
-        }
         .headerJump 
         {
             padding: 10px 16px;
-            background: #555;
-            color: #f1f1f1;
+            background-color: #ff3b3f;
             text-align: right;
             word-spacing: 30px;
+        }
+        a:link
+        {
+            color: #DEC747;
+        }
+        a:visited
+        {
+            color:  #DEC747;
+        }
+        a:hover
+        {
+            color:  blueviolet;
+        }
+        a:active
+        {
+            color:  cornflowerblue;
         }
         .content 
         {
@@ -22,6 +31,10 @@
             padding-right: 570px;
             padding-top: 50px;
             text-align: center;
+            background-color: #2C3531;
+            color: #D1E8E2;
+            font-size: 20px;
+            
         }
         .sticky
         {
@@ -36,6 +49,7 @@
         .about
         {
             padding-top: 500px;
+            
         }
         .intro
         {
@@ -49,6 +63,7 @@
         .contact
         {
             padding-top: 500px;
+            padding-bottom: 50px;
         }
         .headerName
         {
@@ -56,22 +71,64 @@
             text-align: left;
             margin-top: -45px;
         }
+        .name
+        {
+            color: peru;
+        }
+        
+        .aboutStart
+        {
+            color: peru;
+        }
+        .experinceTitle
+        {
+            color: peru;
+        }
+        .cPlusPlusTitle
+        {
+            color: peru;
+        }
+        .unityWizardTitle
+        {
+            color: peru;
+        }
+        .unityTitle
+        {
+            color: peru;
+        }
+        .pythonPathfindingTitle
+        {
+            color: peru;
+        }
+        .moreProjects
+        {
+            color: peru;
+        }
+        .contactMeTitle
+        {
+            color: peru;
+        }
     </style>
 </head>
 <body>
 
 <div class="headerJump" id="myHeader">
-    <h2> <a href ="#aboutMe">About</a> <a href ="#myExperience">Experience</a> <a href ="#myEmail">Contact</a> <a href = "CV.docx" download target="_blank">  CV</a></h2>
+    <h2> <a href ="#aboutMe" style="text-decoration: none;">About</a>
+        <a href ="#myExperience"style="text-decoration: none;">Experience</a> 
+        <a href ="#myEmail"style="text-decoration: none;">Contact</a> 
+        <a href = "CV.docx" download target="_blank"style="text-decoration: none;">  CV</a></h2>
     <div class="headerName" id="myName">
-        <h2> <a href="https://shawwal00.github.io/Portfolio/" > Shawwal Shahid</a></h2>
+        <h2> <a href="https://shawwal00.github.io/Portfolio/" style="text-decoration: none;"> Shawwal Shahid</a></h2>
     </div>
 </div>
 
 <div class="content">
     <div class="intro" id="introduction">
-        <h1>
-            Hi, i'm Shawwal Shahid and I make games.
+        <div class="name" id="nameIntro">
+        <h1> 
+            Hi, I'm Shawwal Shahid and I make games.
         </h1>
+         </div>
         <p>
             I'm currently a Games Technology undergraduate who has just finished his first year.
             As you might imagine I have a large passion for games, and as a result
@@ -81,7 +138,9 @@
     </div>
 
     <div class="about" id="aboutMe">
+        <div class="aboutStart">
         <h1> About Me</h1>
+        </div>
         <p>
             Hi, I'm a Games Technology undergraduate at UWE who has just finished his first year.
             Like most people my interest with games first sparked when I played RTS's such as Warcraft 3
@@ -102,9 +161,13 @@
         </p>
     </div>
     <div class="experince" id="myExperience">
+        <div class="experinceTitle">
         <h1> Experience</h1>
+        </div>
         <p> Below are various games and projects that I have made soley or with a team. </p>
+        <div class="cPlusPlusTitle">
         <h3>C++ Platformer </h3>
+        </div>
         <video controls width="750">
             <source src="Platformer.mp4"
                     type="video/mp4">
@@ -117,7 +180,9 @@
             to win. It was programmed using Clion and was a 1st year University Assignment
         </p>
         <p> C++ Platformer - <a href="https://github.com/Shawwal00/2DPlatformer" target="_blank" rel="noopener noreferrer"> Github Link </a></p>
+        <div class="unityTitle">
         <h3>Unity Flight Scene </h3>
+        </div>
         <video controls width="750">
             <source src="UnityShip.mp4"
                     type="video/mp4">
@@ -131,7 +196,9 @@
             I created all of the various animations. This project was part of my coursework for my 1st year at university.
         </p>
         <p>Unity Flight Scene - <a href="https://github.com/Shawwal00/PO3DECoursework" target="_blank" rel="noopener noreferrer"> Github Link </a></p>
+        <div class="unityWizardTitle">
         <h3>Unity Wizard Platformer </h3>
+        </div>
         <video controls width="750">
             <source src="UnityWizardGroup.mp4"
                     type="video/mp4">
@@ -145,7 +212,9 @@
             I mostly contributed to the enemy, traps, the potion double jump ability, the music and various bug fixes.
         </p>
         <p> Unity Wizard Platformer - <a href="https://github.com/Shawwal00/UnityWizard" target="_blank" rel="noopener noreferrer"> Github Link </a></p>
+        <div class="pythonPathfindingTitle">
         <h3>Python Pathfinding </h3>
+        </div>
         <video controls width="750">
             <source src="PythonPathfinding.mp4"
                     type="video/mp4">
@@ -159,17 +228,22 @@
             The code for the pathfinding can be found in tasks/task3_pathfinding.py.
         </p>
         <p> Python Pathfinding - <a href="https://github.com/Shawwal00/PriateGame" target="_blank" rel="noopener noreferrer"> Github Link </a></p>
+        <div class="moreProjects">
+        <h2>More projects showcasing my skill in C++, C# or Python can be found on my Github, linked down below. </h2>
+        </div>
     </div>
     <div class="contact" id="myEmail">
+        <div class="contactMeTitle">
         <h1> Contact Me</h1>
+        </div>
         <p>
             I will try to respond as as soon as I can to any queries that are sent. I am currently looking for a summer internship or summer work
             and so would appreciate any such offers.
         </p>
         <p> If you want to get in contact with me regarding anything,
             <a href="mailto:shawwalwork@gmail.com"> you can email me here. </a></p>
-        <p> My github link - <a href="https://github.com/Shawwal00" target="_blank" rel="noopener noreferrer"> can be found here. </a></p>
-        <p> My linkedin link - <a href="https://www.linkedin.com/in/shawwal-shahid-277b921a1/" target="_blank" rel="noopener noreferrer"> can be found here. </a></p>
+        <p> My Github link - <a href="https://github.com/Shawwal00" target="_blank" rel="noopener noreferrer"> can be found here. </a></p>
+        <p> My Linkedin link - <a href="https://www.linkedin.com/in/shawwal-shahid-277b921a1/" target="_blank" rel="noopener noreferrer"> can be found here. </a></p>
     </div>    
 </div>
 
