@@ -26,17 +26,35 @@
         {
             color:  cornflowerblue;
         }
-        .content 
-        {
-            padding: 10px 10px;
-            padding-left: 570px;
-            padding-right: 570px;
-            padding-top: 50px;
-            text-align: center;
-            background-color: #2C3531;
-            color: #D1E8E2;
-            font-size: 20px;
-            
+        @media screen and (max-height:  1080px) and  (max-width: 1920px){
+            .content {
+                padding: 10px 10px;
+                padding-top: 50px;
+                padding-left: 570px;
+                padding-right: 570px;
+
+
+                text-align: center;
+                background-color: #2C3531;
+                color: #D1E8E2;
+                font-size: 20px;
+
+            }
+        }
+        @media screen and (height: 100px) and  (height: 1920px) {
+            .content {
+                padding: 10px 10px;
+                padding-top: 50px;
+                padding-left: 170px;
+                padding-right: 170px;
+
+
+                text-align: center;
+                background-color: #2C3531;
+                color: #D1E8E2;
+                font-size: 20px;
+
+            }
         }
         .sticky
         {
